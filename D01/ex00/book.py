@@ -11,7 +11,6 @@ class Book:
             "main_course":{},
             "dessert":{}
         }
-
     def get_recipe_by_name(self, name):
         i = 0
         for types in self.recipes_list:
@@ -44,3 +43,4 @@ class Book:
             self.recipes_list["dessert"][recipe.name] = recipe
         self.last_update = datetime.datetime.now() 
         print (recipe.name + " has been added to the Book !")
+    
