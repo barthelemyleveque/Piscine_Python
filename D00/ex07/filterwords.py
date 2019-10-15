@@ -12,7 +12,8 @@ try:
     check = sys.argv[3]
 except IndexError:
     check = None
-
+if (string == None or integer == None or check != None):
+    sys.exit("ERROR")
 if (string.isdigit() == 1 or integer.isdigit() == 0):
     sys.exit("ERROR")
 
