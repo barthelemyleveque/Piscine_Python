@@ -23,8 +23,11 @@ def generator(text, sep=" ", option=None):
         for word in array:
             yield word
 
+    else:
+        exit("Unknown Option")
 
-##text = "Le Lorem Ipsum est simplement du faux est texte."
+
+text = "Le Lorem Ipsum est simplement du faux est texte."
 #for word in generator(text, sep=" "):
 #    print(word)
 
@@ -34,5 +37,5 @@ def generator(text, sep=" ", option=None):
 #for word in generator(text, sep=" ", option="unique"):
  #   print(word)
 
-#for word in generator(text, sep=" ", option="shuffle"):
-#    print(word)
+for word in generator(text, sep=" ", option="caca"):
+    print(word)

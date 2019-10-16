@@ -1,6 +1,6 @@
 from vector import *
 
-vector1 = Vector(0, 3)
+"""vector1 = Vector(0, 3)
 print(vector1)
 vector2 = Vector(4)
 print(vector2)
@@ -17,7 +17,7 @@ print(vector4)
 vector4 = vector1 / 2
 print(vector4)
 vector4 = vector1 / 0
-print(vector4)
+print(vector4)"""
 
 #vector1 = Vector("lol", 3)
 #print(vector1.values)
@@ -27,3 +27,7 @@ print(vector4)
 #print(vector2.values)
 #vector3 = Vector([1.0, "s", 6.0])
 #print(vector3.values)
+
+v1 = Vector(5)
+v2 = Vector(5)
+print(v1.__repr__())

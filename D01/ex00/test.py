@@ -1,7 +1,8 @@
 from book import *
 from recipe import *
 
-tourte = Recipe("tourte", 4, 30, ["patates", "oeufs"], "une grosse tourte", "starter") #good
+print("lol" + None)
+tourte = Recipe("t", +3, 30, 5, "une grosse tourte", "starter") #good
 gateau = Recipe("gateau", 2, 10, ["sucre", "faribne", "chocolat"], "un beau gateau", "dessert") #good
 meringue = Recipe("meringue", 1, 10, ["sucre", "du sucre", "et encore du sucre"], "une meringue avec beaucoup de sucre", "dessert") #good
 omelette = Recipe("omelette", 5, 50, ["eggs", "cream", "chocolat"], "une omelette bien cremeuse", "main_course") #good
@@ -23,3 +24,4 @@ recipe_book.get_recipes_by_type("dessert")
 print("\n")
 recipe_book.get_recipes_by_type("caca")
 recipe_book.add_recipe("caca")
+print(type(("lol", "lol")))
