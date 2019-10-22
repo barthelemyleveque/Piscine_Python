@@ -1,8 +1,9 @@
 from FileLoader import FileLoader
 import pandas as pd
 
-def howManyMedals(data, name):
-    athlete = data[(data.Name == name) & (data.Medal.isna() == False)]
+def howManyMedalsByCountry(data, name):
+    athlete = data[(data.Team == name) & (data.Medal.isna() == False)]
+    athlete = athlete.sort_values(by='Year')
     medals = {}
     year = 0
     for index, row in athlete.iterrows():
@@ -22,5 +23,5 @@ def howManyMedals(data, name):
 
 loader = FileLoader()
 data = loader.load('../athlete_events.csv')
-medals = howManyMedals(data, "Michael Fred Phelps, II")
+medals = howManyMedalsByCountry(data, "Nigeria")
 print(medals)
