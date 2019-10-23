@@ -34,12 +34,3 @@ class MyPlotLib:
             plt.boxplot(temp)
             plt.title("Boxplot for : " + feature)
             plt.show()
-
-
-loader = FileLoader()
-data = loader.load('../athlete_events.csv')
-mpl = MyPlotLib()
-#mpl.histogram(data, ['Age', 'Height'])
-#mpl.density(data, ['Age', 'Height'])
-mpl.pair_plot(data, ['Sex', 'Age'])
-mpl.box_plot(data, ['Height', 'Age'])
